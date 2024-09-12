@@ -23,6 +23,12 @@ ASRClient
 - win_cudaエディション：Windows向けのNVIDIAのGPUで動作するエディションです。GPUのハードウェアアクセラレーションにより高速に動きます。
 - macエディション：Mac(Apple silicon(M1, M2, M3, etc))向けのエディションです。
 
+## オンラインデモ
+
+Colabでの実行が可能です。
+[こちらのノート](https://github.com/w-okada/asrclient/blob/master/w_okada's_ASR_Client.ipynb)にアクセスし、左上の`Open in Colab`ボタンをクリックして開いてください。
+
+
 ## 使用方法
 - zipファイルを展開後、`start_http.bat`を実行してください。表示された、URLにブラウザでアクセスしてください。
 - `start_https.bat`を使用すると、リモートからでもアクセスすることができます。

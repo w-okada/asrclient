@@ -22,6 +22,11 @@ TTSClient
 - win_cuda 에디션: Windows용 NVIDIA GPU에서 동작하는 에디션입니다. GPU 하드웨어 가속을 통해 빠르게 작동합니다.
 - mac 에디션: Mac(Apple silicon(M1, M2, M3, etc))용 에디션입니다.
 
+## 온라인 데모
+
+Colab에서 실행할 수 있습니다.
+[이 노트북](https://github.com/w-okada/asrclient/blob/master/w_okada's_ASR_Client.ipynb)에 접속하여 왼쪽 상단의 `Open in Colab` 버튼을 클릭해 열어주세요.
+
 ## 사용 방법
 - zip 파일을 해제한 후, `start_http.bat`을 실행하십시오. 표시된 URL에 브라우저로 접근하십시오.
 - `start_https.bat`을 사용하면 원격에서도 접근할 수 있습니다.

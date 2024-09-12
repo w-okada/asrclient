@@ -23,6 +23,11 @@ Please download from the [Hugging Face repository](https://huggingface.co/wok000
 - win_cuda Edition: This is the edition for Windows that runs on an NVIDIA GPU. It operates faster due to GPU hardware acceleration.
 - mac Edition: This is the edition for Mac(Apple silicon(M1, M2, M3, etc)).
 
+## Online Demo
+
+You can run this on Colab.
+Please access [this notebook](https://github.com/w-okada/asrclient/blob/master/w_okada's_ASR_Client.ipynb) and click the `Open in Colab` button in the top left to open it.
+
 ## Usage
 - After extracting the zip file, execute `start_http.bat`. Then, access the displayed URL in a browser.
 - Use `start_https.bat` to access the software remotely.

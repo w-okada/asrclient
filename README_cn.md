@@ -23,6 +23,12 @@ TTSClient
 - win_cuda版：适用于Windows的版本，运行在NVIDIA的GPU上。利用GPU硬件加速，可以快速运行。
 - mac版：适用于Mac(Apple silicon(M1, M2, M3, etc))的版本。
 
+## 在线演示
+
+你可以在Colab上运行此程序。
+请访问[这个笔记本](https://github.com/w-okada/asrclient/blob/master/w_okada's_ASR_Client.ipynb)，然后点击左上角的 `Open in Colab` 按钮打开它。
+
+
 ## 使用方法
 - 解压缩文件后，运行`start_http.bat`。在浏览器中访问显示的URL。
 - 使用`start_https.bat`可以从远程访问。
