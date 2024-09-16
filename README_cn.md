@@ -8,6 +8,8 @@ TTSClient
 - 支持的AI
   - [Whisper](https://github.com/openai/whisper)
   - [Faster Whisper](https://github.com/SYSTRAN/faster-whisper)
+  - [SenceVoiceSmall](https://github.com/FunAudioLLM/SenseVoice)
+    - [license](https://github.com/FunAudioLLM/SenseVoice/blob/main/LICENSE)
 
 
 
