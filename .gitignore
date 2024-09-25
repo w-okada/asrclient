@@ -4,3 +4,4 @@ dist
 ssl_key/*
 node_modules
 asr-client.log
+third_party/*
