@@ -68,6 +68,12 @@ Please execute the following command:
 poetry run main cui
 ```
 
+If you encounter an error like `fatal error: Python.h: No such file or directory`, please install the Python source code.
+
+```
+sudo apt install python3-dev
+```
+
 ### Webhook Client Sample
 
 #### Python

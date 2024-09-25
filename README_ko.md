@@ -67,6 +67,11 @@ poetry install
 poetry run main cui
 ```
 
+`fatal error: Python.h: 그런 파일이나 디렉터리가 없습니다`와 같은 오류가 발생하면, Python 소스 코드를 설치하십시오.
+```
+sudo apt install python3-dev
+```
+
 ### webhook 클라이언트 샘플
 
 #### Python

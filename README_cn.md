@@ -69,6 +69,11 @@ poetry install
 poetry run main cui
 ```
 
+如果遇到 `fatal error: Python.h: No such file or directory` 类似的错误，请安装 Python 源代码。
+```
+sudo apt install python3-dev
+```
+
 ### Webhook客户端样例
 
 #### Python

@@ -72,6 +72,12 @@ poetry install
 poetry run main cui
 ```
 
+`fatal error: Python.h: そのようなファイルやディ レクトリはありません`のようなエラーが出る場合は、pythonのソースコードをインストールしてください。
+```
+sudo apt install python3-dev
+```
+
+
 ### webhook client sample
 
 #### python
