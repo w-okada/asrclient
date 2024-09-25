@@ -1,1 +1,6 @@
 *.pyc
+build
+dist
+ssl_key/*
+node_modules
+asr-client.log
