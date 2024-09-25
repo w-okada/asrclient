@@ -1,11 +1,11 @@
 import logging
 from fastapi import APIRouter
 
-from ..const import LOGGER_NAME
-from .validation_error_logging_route import ValidationErrorLoggingRoute
-from ..transcriber.configuration_manager.configuration_manager import ConfigurationManager
-from ..transcriber.data_types.data_types import ASRConfiguration
-from ..transcriber.transcrber import Transcriber
+from asrclient.const import LOGGER_NAME
+from asrclient.server.validation_error_logging_route import ValidationErrorLoggingRoute
+from asrclient.transcriber.configuration_manager.configuration_manager import ConfigurationManager
+from asrclient.transcriber.data_types.data_types import ASRConfiguration
+from asrclient.transcriber.transcrber import Transcriber
 
 
 class RestAPIConfigurationManager:

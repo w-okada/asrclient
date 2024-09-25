@@ -1,8 +1,8 @@
 import logging
 import torch
 
-from ....const import LOGGER_NAME
-from ...gpu_device_manager.gpu_device_manager import GPUDeviceManager
+from asrclient.const import LOGGER_NAME
+from asrclient.transcriber.gpu_device_manager.gpu_device_manager import GPUDeviceManager
 
 try:
     import torch_directml

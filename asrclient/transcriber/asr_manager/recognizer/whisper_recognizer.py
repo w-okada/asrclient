@@ -5,9 +5,9 @@ import numpy as np
 import whisper
 from whisper.tokenizer import LANGUAGES
 
-from ....const import LOGGER_NAME, WhisperModelType
-from ..device_manager.device_manager import DeviceManager
-from .recognizer import Recognizer
+from asrclient.const import LOGGER_NAME, WhisperModelType
+from asrclient.transcriber.asr_manager.device_manager.device_manager import DeviceManager
+from asrclient.transcriber.asr_manager.recognizer.recognizer import Recognizer
 
 
 class WhisperRecognizer(Recognizer):

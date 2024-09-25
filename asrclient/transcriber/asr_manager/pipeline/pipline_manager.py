@@ -1,10 +1,10 @@
 import logging
 import platform
-from ....const import LOGGER_NAME, ComputeType, ReazonSpeechPrecisionType, RecognizerType, WhisperModelType
-from ....exception import ERROR_CODE_WHISPER_IS_NOT_SUPPORTED, VCClientError
-from .single_transcriber_pipeline import SingleTranscriberPipeline
-from .general_whisper_pipeline import GeneralWhisperPipeline
-from .pipeline import Pipeline
+from asrclient.const import LOGGER_NAME, ComputeType, ReazonSpeechPrecisionType, RecognizerType, WhisperModelType
+from asrclient.exception import ERROR_CODE_WHISPER_IS_NOT_SUPPORTED, VCClientError
+from asrclient.transcriber.asr_manager.pipeline.single_transcriber_pipeline import SingleTranscriberPipeline
+from asrclient.transcriber.asr_manager.pipeline.general_whisper_pipeline import GeneralWhisperPipeline
+from asrclient.transcriber.asr_manager.pipeline.pipeline import Pipeline
 
 
 class PipelineManager:

@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from .validation_error_logging_route import ValidationErrorLoggingRoute
-from ..transcriber.gpu_device_manager.gpu_device_manager import GPUDeviceManager
+from asrclient.server.validation_error_logging_route import ValidationErrorLoggingRoute
+from asrclient.transcriber.gpu_device_manager.gpu_device_manager import GPUDeviceManager
 
 
 class RestAPIGPUDeviceManager:

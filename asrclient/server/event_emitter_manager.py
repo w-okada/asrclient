@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from .event_emitter import EventEmitter
+from asrclient.server.event_emitter import EventEmitter
 
 
 class EventEmitterManager:

@@ -2,7 +2,7 @@ import os
 from OpenSSL import crypto
 from datetime import datetime
 
-from ..const import SSL_KEY_DIR
+from asrclient.const import SSL_KEY_DIR
 
 
 def generate_self_signed_cert():

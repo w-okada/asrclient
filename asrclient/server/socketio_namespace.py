@@ -2,9 +2,9 @@ import logging
 import socketio
 import asyncio
 
-from ..const import LOGGER_NAME
-from .event_emitter import EventEmitter
-from .event_emitter_manager import EventEmitterManager
+from asrclient.const import LOGGER_NAME
+from asrclient.server.event_emitter import EventEmitter
+from asrclient.server.event_emitter_manager import EventEmitterManager
 
 
 class SocketIONamespace(socketio.AsyncNamespace, EventEmitter):

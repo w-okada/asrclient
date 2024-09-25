@@ -4,9 +4,9 @@ from typing import Any
 import numpy as np
 from funasr import AutoModel
 
-from ....const import LOGGER_NAME
-from ..device_manager.device_manager import DeviceManager
-from .recognizer import Recognizer
+from asrclient.const import LOGGER_NAME
+from asrclient.transcriber.asr_manager.device_manager.device_manager import DeviceManager
+from asrclient.transcriber.asr_manager.recognizer.recognizer import Recognizer
 
 
 class SenseVoiceRecognizer(Recognizer):

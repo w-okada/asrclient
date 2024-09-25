@@ -9,12 +9,12 @@ from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.openapi.docs import swagger_ui_default_parameters
 
-from ..const import LOGGER_NAME, TMP_DIR, UPLOAD_DIR
-from .rest_api_configuration_manager import RestAPIConfigurationManager
-from .rest_api_gpu_device_manager import RestAPIGPUDeviceManager
-from .rest_api_hello import RestHello
-from .rest_api_transcriber import RestAPITranscriber
-from .validation_error_logging_route import ValidationErrorLoggingRoute
+from asrclient.const import LOGGER_NAME, TMP_DIR, UPLOAD_DIR
+from asrclient.server.rest_api_configuration_manager import RestAPIConfigurationManager
+from asrclient.server.rest_api_gpu_device_manager import RestAPIGPUDeviceManager
+from asrclient.server.rest_api_hello import RestHello
+from asrclient.server.rest_api_transcriber import RestAPITranscriber
+from asrclient.server.validation_error_logging_route import ValidationErrorLoggingRoute
 
 from starlette.middleware.base import BaseHTTPMiddleware
 

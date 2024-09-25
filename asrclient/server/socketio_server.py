@@ -1,6 +1,6 @@
 import socketio
 
-from .socketio_namespace import SocketIONamespace
+from asrclient.server.socketio_namespace import SocketIONamespace
 
 
 class SocketIOServer(socketio.AsyncServer):

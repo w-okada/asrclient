@@ -2,11 +2,11 @@ import logging
 from typing import Any
 import numpy as np
 from faster_whisper import WhisperModel
-
-from ....const import LOGGER_NAME, ComputeType, WhisperModelType
-from ..device_manager.device_manager import DeviceManager
-from .recognizer import Recognizer
 from whisper.tokenizer import LANGUAGES
+
+from asrclient.const import LOGGER_NAME, ComputeType, WhisperModelType
+from asrclient.transcriber.asr_manager.device_manager.device_manager import DeviceManager
+from asrclient.transcriber.asr_manager.recognizer.recognizer import Recognizer
 
 
 class FasterWhisperRecognizer(Recognizer):

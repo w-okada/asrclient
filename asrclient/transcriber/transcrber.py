@@ -6,12 +6,12 @@ import threading
 import requests
 import json
 
-from ..const import LOGGER_NAME
-from ..exception import ERROR_CODE_WHISPER_IS_NOT_SUPPORTED, VCClientError
-from ..server.event_emitter_manager import EventEmitterManager
-from .asr_manager.pipeline.pipeline import Pipeline
-from .asr_manager.pipeline.pipline_manager import PipelineManager
-from .configuration_manager.configuration_manager import ConfigurationManager
+from asrclient.const import LOGGER_NAME
+from asrclient.exception import ERROR_CODE_WHISPER_IS_NOT_SUPPORTED, VCClientError
+from asrclient.server.event_emitter_manager import EventEmitterManager
+from asrclient.transcriber.asr_manager.pipeline.pipeline import Pipeline
+from asrclient.transcriber.asr_manager.pipeline.pipline_manager import PipelineManager
+from asrclient.transcriber.configuration_manager.configuration_manager import ConfigurationManager
 
 
 class Transcriber:

@@ -4,7 +4,7 @@ from fastapi import Request, Response, HTTPException
 from fastapi.routing import APIRoute
 from fastapi.exceptions import RequestValidationError
 
-from ..const import LOGGER_NAME
+from asrclient.const import LOGGER_NAME
 
 
 class ValidationErrorLoggingRoute(APIRoute):

@@ -8,9 +8,9 @@ import threading
 import portpicker
 import importlib.util
 
-from ..const import LOGGER_NAME
-from .key_generator import generate_self_signed_cert
-from .socketio_server import SocketIOServer
+from asrclient.const import LOGGER_NAME
+from asrclient.server.key_generator import generate_self_signed_cert
+from asrclient.server.socketio_server import SocketIOServer
 
 
 class Server:

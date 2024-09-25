@@ -1,8 +1,8 @@
 from typing import Any
 import numpy as np
 
-from ..device_manager.device_manager import DeviceManager
-from .recognizer import Recognizer
+from asrclient.transcriber.asr_manager.device_manager.device_manager import DeviceManager
+from asrclient.transcriber.asr_manager.recognizer.recognizer import Recognizer
 
 
 from transformers import pipeline

@@ -3,8 +3,8 @@ import platform
 import re
 import torch
 
-from ...const import LOGGER_NAME
-from ..data_types.data_types import GPUInfo
+from asrclient.const import LOGGER_NAME
+from asrclient.transcriber.data_types.data_types import GPUInfo
 
 
 def reload_gpu_info_for_win() -> list[GPUInfo]:

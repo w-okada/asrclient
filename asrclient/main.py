@@ -5,15 +5,15 @@ import time
 import fire
 import os
 
-from .logger import setup_logger
-from .app_status import AppStatus
-from .const import LOG_FILE, LOGGER_NAME, VERSION
-from .proxy.ngrok_proxy_manager import NgrokProxyManager
-from .utils.resolve_url import resolve_base_url
-from .utils.parseBoolArg import parse_bool_arg
-from .server.server import Server
+from asrclient.logger import setup_logger
+from asrclient.app_status import AppStatus
+from asrclient.const import LOG_FILE, LOGGER_NAME, VERSION
+from asrclient.proxy.ngrok_proxy_manager import NgrokProxyManager
+from asrclient.utils.resolve_url import resolve_base_url
+from asrclient.utils.parseBoolArg import parse_bool_arg
+from asrclient.server.server import Server
 
-from .transcriber.transcrber import Transcriber
+from asrclient.transcriber.transcrber import Transcriber
 
 
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"

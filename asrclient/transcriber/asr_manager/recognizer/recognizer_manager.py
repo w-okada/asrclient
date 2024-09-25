@@ -1,12 +1,12 @@
-from ....const import ComputeType, ReazonSpeechPrecisionType, RecognizerType, WhisperModelType
-from .faster_whisper_recognizer import FasterWhisperRecognizer
-from .kotoba_whisper_v2_faster import KotobaWhisperV2Faster
-from .kotoba_whisper_v2 import KotobaWhisperV2
-from .reazonspeech_k2_v2 import ReazonSpeechK2V2
-from .reazonspeech_nemo_v2 import ReazonSpeechNemoV2
-from .recognizer import Recognizer
-from .sense_voice_recognizer import SenseVoiceRecognizer
-from .whisper_recognizer import WhisperRecognizer
+from asrclient.const import ComputeType, ReazonSpeechPrecisionType, RecognizerType, WhisperModelType
+from asrclient.transcriber.asr_manager.recognizer.faster_whisper_recognizer import FasterWhisperRecognizer
+from asrclient.transcriber.asr_manager.recognizer.kotoba_whisper_v2_faster import KotobaWhisperV2Faster
+from asrclient.transcriber.asr_manager.recognizer.kotoba_whisper_v2 import KotobaWhisperV2
+from asrclient.transcriber.asr_manager.recognizer.reazonspeech_k2_v2 import ReazonSpeechK2V2
+from asrclient.transcriber.asr_manager.recognizer.reazonspeech_nemo_v2 import ReazonSpeechNemoV2
+from asrclient.transcriber.asr_manager.recognizer.recognizer import Recognizer
+from asrclient.transcriber.asr_manager.recognizer.sense_voice_recognizer import SenseVoiceRecognizer
+from asrclient.transcriber.asr_manager.recognizer.whisper_recognizer import WhisperRecognizer
 
 
 class RecognizerManager:

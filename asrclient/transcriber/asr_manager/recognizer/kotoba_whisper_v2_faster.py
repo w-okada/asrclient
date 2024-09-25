@@ -3,9 +3,9 @@ from typing import Any
 from faster_whisper import WhisperModel
 import numpy as np
 
-from ....const import LOGGER_NAME, ComputeType
-from ..device_manager.device_manager import DeviceManager
-from .recognizer import Recognizer
+from asrclient.const import LOGGER_NAME, ComputeType
+from asrclient.transcriber.asr_manager.device_manager.device_manager import DeviceManager
+from asrclient.transcriber.asr_manager.recognizer.recognizer import Recognizer
 
 
 class KotobaWhisperV2Faster(Recognizer):

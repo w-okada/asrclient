@@ -1,7 +1,7 @@
 import os
 
-from ...const import ConfigFile
-from ..data_types.data_types import ASRConfiguration
+from asrclient.const import ConfigFile
+from asrclient.transcriber.data_types.data_types import ASRConfiguration
 
 
 class ConfigurationManager:

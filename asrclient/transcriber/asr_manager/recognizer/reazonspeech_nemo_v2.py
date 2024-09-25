@@ -2,9 +2,9 @@ import logging
 from typing import Any
 import numpy as np
 
-from ....const import LOGGER_NAME
-from ..device_manager.device_manager import DeviceManager
-from .recognizer import Recognizer
+from asrclient.const import LOGGER_NAME
+from asrclient.transcriber.asr_manager.device_manager.device_manager import DeviceManager
+from asrclient.transcriber.asr_manager.recognizer.recognizer import Recognizer
 
 from reazonspeech.nemo.asr import load_model, audio_from_numpy
 from reazonspeech.nemo.asr.interface import TranscribeConfig

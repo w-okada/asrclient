@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from ...const import ComputeType, ReazonSpeechPrecisionType, RecognizerType, WhisperModelType
+from asrclient.const import ComputeType, ReazonSpeechPrecisionType, RecognizerType, WhisperModelType
 
 
 class GPUInfo(BaseModel):

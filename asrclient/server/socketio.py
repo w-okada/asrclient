@@ -1,10 +1,10 @@
 import logging
 import socketio
 
-from ..const import LOG_FILE, LOGGER_NAME, SERVER_IO_RECORDING_FILE_IN, SERVER_IO_RECORDING_FILE_OUT, get_frontend_path
-from .rest_api import RestAPI
-from .socketio_server import SocketIOServer
-from .server import Server
+from asrclient.const import LOG_FILE, LOGGER_NAME, SERVER_IO_RECORDING_FILE_IN, SERVER_IO_RECORDING_FILE_OUT, get_frontend_path
+from asrclient.server.rest_api import RestAPI
+from asrclient.server.socketio_server import SocketIOServer
+from asrclient.server.server import Server
 
 
 class SocketIOApp:

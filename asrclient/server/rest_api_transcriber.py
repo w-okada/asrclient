@@ -6,8 +6,8 @@ from pydantic import BaseModel
 import wave
 import time
 
-from .validation_error_logging_route import ValidationErrorLoggingRoute
-from ..transcriber.transcrber import Transcriber
+from asrclient.server.validation_error_logging_route import ValidationErrorLoggingRoute
+from asrclient.transcriber.transcrber import Transcriber
 
 
 class ConvertFileParam(BaseModel):

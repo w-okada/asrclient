@@ -2,9 +2,9 @@ import logging
 from typing import Any
 import numpy as np
 
-from ....const import LOGGER_NAME, ReazonSpeechPrecisionType
-from ..device_manager.device_manager import DeviceManager
-from .recognizer import Recognizer
+from asrclient.const import LOGGER_NAME, ReazonSpeechPrecisionType
+from asrclient.transcriber.asr_manager.device_manager.device_manager import DeviceManager
+from asrclient.transcriber.asr_manager.recognizer.recognizer import Recognizer
 
 from reazonspeech.k2.asr import load_model, transcribe, audio_from_numpy
 

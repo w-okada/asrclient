@@ -4,7 +4,7 @@ from typing import Literal
 import numpy as np
 from pydantic import BaseModel
 
-from ....const import ComputeType, ReazonSpeechPrecisionType, RecognizerType, WhisperModelType
+from asrclient.const import ComputeType, ReazonSpeechPrecisionType, RecognizerType, WhisperModelType
 
 
 class PipelineInfo(BaseModel):

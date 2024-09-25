@@ -3,10 +3,10 @@ from typing import List, Literal
 import wave
 import samplerate as sr
 import numpy as np
-from ....const import LOGGER_NAME, ComputeType, ReazonSpeechPrecisionType, RecognizerType, WhisperModelType
-from .pipeline import Pipeline, PipelineInfo
-from ..recognizer.recognizer_manager import RecognizerManager
-from ..utils.audio_splitter import tagging, Frame
+from asrclient.const import LOGGER_NAME, ComputeType, ReazonSpeechPrecisionType, RecognizerType, WhisperModelType
+from asrclient.transcriber.asr_manager.pipeline.pipeline import Pipeline, PipelineInfo
+from asrclient.transcriber.asr_manager.recognizer.recognizer_manager import RecognizerManager
+from asrclient.transcriber.asr_manager.utils.audio_splitter import tagging, Frame
 
 global_index = 0
 
