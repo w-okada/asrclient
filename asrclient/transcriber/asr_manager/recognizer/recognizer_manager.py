@@ -1,4 +1,5 @@
-from asrclient.const import ComputeType, ReazonSpeechPrecisionType, RecognizerType, WhisperModelType
+import logging
+from asrclient.const import LOGGER_NAME, ComputeType, ReazonSpeechPrecisionType, RecognizerType, WhisperModelType
 from asrclient.transcriber.asr_manager.recognizer.faster_whisper_recognizer import FasterWhisperRecognizer
 from asrclient.transcriber.asr_manager.recognizer.kotoba_whisper_v2_faster import KotobaWhisperV2Faster
 from asrclient.transcriber.asr_manager.recognizer.kotoba_whisper_v2 import KotobaWhisperV2
@@ -24,6 +25,7 @@ class RecognizerManager:
         try:
             cls.current_recognizer = cls.load_recognizer(recognizer_type, device_id, compute_type, model_type=model_type, reazon_speech_precision_type=reazon_speech_precision_type)
         except Exception as e:
+            logging.getLogger(LOGGER_NAME).error(f"load recognizer error: {e}")
             raise RuntimeError(e)
         return cls.current_recognizer
 

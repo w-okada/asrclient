@@ -25,7 +25,6 @@ class ReazonSpeechK2V2(Recognizer):
             logging.getLogger(LOGGER_NAME).info(f"[reazonspeech_nemo_v2] initialize with device {device}")
         except Exception as e:
             logging.getLogger(LOGGER_NAME).error(f"[reazonspeech_nemo_v2] load reason model failed {e}")
-
             import traceback
 
             traceback.print_exc()
