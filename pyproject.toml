@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "asrclient"
-version = "1.0.1"
+version = "1.0.2"
 description = ""
 authors = ["wok <test@test.com>"]
 readme = "README.md"

@@ -4013,7 +4013,7 @@
       "licenseURL": ""
     },
     {
-      "name": "webpack@5.94.0",
+      "name": "webpack@5.95.0",
       "repository": "https://github.com/webpack/webpack",
       "licenseURL": ""
     },
@@ -4100,7 +4100,7 @@
       "licenseURL": ""
     },
     {
-      "name": "asr-client-typescript-client-lib@1.0.35",
+      "name": "asr-client-typescript-client-lib@1.0.36",
       "repository": "",
       "licenseURL": ""
     },
