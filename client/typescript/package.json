@@ -1,7 +1,7 @@
 {
   "name": "asr-client-typescript-client-lib",
   "type": "module",
-  "version": "1.0.36",
+  "version": "1.0.37",
   "description": "",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
