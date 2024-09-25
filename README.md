@@ -2,7 +2,10 @@ ASRClient
 ---
   [[日本語]](./README.md) [[English]](./README_en.md) [[한국어]](./README_ko.md) [[中文简体]](./README_cn.md)
 
-音声認識/Speech To Text/Automatic Speech Recognition(STT/ASR)のクライアントソフトウェアです。
+リアルタイム音声認識/Speech To Text/Automatic Speech Recognition(STT/ASR)のクライアントソフトウェアです。
+
+認識したテキストをWebHook経由やWebsocoket経由でリアルタイムに取得することができます。
+
 各種AIに対応していく計画です。
 
 - 対応 AI
@@ -10,16 +13,20 @@ ASRClient
   - [Faster Whisper](https://github.com/SYSTRAN/faster-whisper)
   - [SenceVoiceSmall](https://github.com/FunAudioLLM/SenseVoice)
     - [license](https://github.com/FunAudioLLM/SenseVoice/blob/main/LICENSE)
+  - [Reazon Speech](https://research.reazon.jp/projects/ReazonSpeech/index.html)
+  - [kotoba-whisper-v2.0](https://huggingface.co/kotoba-tech/kotoba-whisper-v2.0)
+  - [kotoba-whisper-v2.0-faster](https://huggingface.co/kotoba-tech/kotoba-whisper-v2.0-faster)
 
 
 
 ## 関連ソフトウェア
 - [リアルタイムボイスチェンジャ VCClient](https://github.com/w-okada/voice-changer)
 - [読み上げソフトウェア TTSClient](https://github.com/w-okada/ttsclient)
-- [音声認識ソフトウェア ASRClient](https://github.com/w-okada/asrclient)
+- [リアルタイム音声認識ソフトウェア ASRClient](https://github.com/w-okada/asrclient)
 
 ## ダウンロード
-[Hugging Faceのリポジトリ](https://huggingface.co/wok000/asrclient000/tree/main)よりダウンロードしてください。
+[Hugging Faceのリポジトリ](https://huggingface.co/wok000/asrclient000/tree/main)
+
 
 - win_stdエディション：Windows向けのCPUで動作するエディションです。cuda版と比較して低速ですが、最近のそれなりのスペックのCPUであれば動きます。
 - win_cudaエディション：Windows向けのNVIDIAのGPUで動作するエディションです。GPUのハードウェアアクセラレーションにより高速に動きます。
@@ -37,3 +44,55 @@ Colabでの実行が可能です。
 - (上級者向け)`start_http_with_ngrok.bat`を使用するとngrokを用いたトンネリングを使用してアクセスすることができます。
 
 note: macエディションは.batを.commandで読み替えてください。
+
+
+## リポジトリをクローンして使用する方法 (Advanced)
+### 前提
+
+- poetry: [how to install](https://python-poetry.org/docs/#installing-with-the-official-installer)
+
+### 準備
+下記のコマンドを実行してください。
+
+```
+git clone https://github.com/w-okada/asrclient.git
+
+cd asrclient
+cd third_party
+git clone https://github.com/reazon-research/ReazonSpeech
+cd ..
+
+poetry install
+
+```
+
+### 実行
+下記のコマンドを実行してください。
+```
+poetry run main cui
+```
+
+### webhook client sample
+
+#### python
+下記のコマンドを実行してください。
+表示されるwebhookのurlをGUIに設定してください。
+
+```
+python .\client\webhook_server\generic_main.py
+```
+
+#### node
+下記のコマンドを実行してください。
+表示されるwebhookのurlをGUIに設定してください。
+```
+node .\client\webhook_server\generic_main.js
+```
+
+### socketio client sample
+下記のコマンドを実行してください。
+`http://localhost:20000`の部分はASRClientの起動URLを指定してください。
+```
+poetry run python_socket_io http://localhost:20000
+```
+

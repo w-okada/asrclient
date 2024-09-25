@@ -1,6 +1,11 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 
+# --- STYLE start ---
+bold_green_start = "\033[1;32m"
+reset = "\033[0m"
+# --- STYLE end ---
+
 
 class HTTPHandler(BaseHTTPRequestHandler):
 
@@ -25,8 +30,16 @@ def run(server_class=HTTPServer, handler_class=HTTPHandler, port=8000):
     server_address = ("", port)
     httpd = server_class(server_address, handler_class)
     print(f"Starting httpd server on port {port}...")
-    print("press ctrl + c to stop")
-    httpd.serve_forever()
+    print(f"{bold_green_start}Webhook url is http://localhost:{port} {reset}")
+    print(f"{bold_green_start}Please press Ctrl+Cto stop.{reset}")
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        print(f"{bold_green_start}Shutting down the server...{reset}")
+        httpd.server_close()
+        print(f"{bold_green_start}Server shut down successfully.{reset}")
 
 
 if __name__ == "__main__":
