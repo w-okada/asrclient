@@ -1,17 +1,51 @@
 [tool.poetry]
 name = "asrclient"
-version = "0.1.0"
+version = "1.0.1"
 description = ""
 authors = ["wok <test@test.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
-fire = "^0.6.0"
+python = "^3.10,<3.13"
+fire = "0.6.0"
+ngrok = "1.4.0"
+pyopenssl = "24.2.1"
+fastapi = "0.115.0"
+numpy = "1.26.4"
+uvicorn = "0.30.6"
+portpicker = "1.6.0"
+python-socketio = "5.11.4"
+pythonnet = "3.0.4"
+samplerate = "0.2.1"
+faster-whisper = "1.0.3"
+funasr = "1.1.6"
+webrtcvad = "2.0.10"
+python-multipart = "0.0.10"
+torch-directml = "0.2.4.dev240815"
+torchaudio = "2.3.1"
+onnxruntime-directml = "1.19.2"
+openai-whisper = {git = "https://github.com/openai/whisper.git"}
+reazonspeech-nemo-asr = {path = "third_party/ReazonSpeech/pkg/nemo-asr"}
+reazonspeech-k2-asr = {path = "third_party/ReazonSpeech/pkg/k2-asr"}
+modelscope = "1.18.0"
+sherpa-onnx = "1.10.27"
+nemo-toolkit = {version = "2.0.0rc0", extras = ["asr"]}
 
+
+
+[tool.poetry.group.dev.dependencies]
+types-pyopenssl = "24.1.0.20240722"
+types-requests = "^2.32.0.20240914"
+pip-licenses = "^5.0.0"
+toml = "^0.10.2"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
 [tool.poetry.scripts]
 main = "asrclient.main:main"
+webhook_server = "client.webhook_server.main:main"
+python_socket_io = "client.python_socket_io.main:main"
+generate_version_file = "scripts.version_manager:main"
+generate_license_file = "scripts.license_manager:generate"
