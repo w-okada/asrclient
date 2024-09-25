@@ -9,15 +9,23 @@ from asrclient.logger import setup_logger
 from asrclient.app_status import AppStatus
 from asrclient.const import LOG_FILE, LOGGER_NAME, VERSION
 from asrclient.proxy.ngrok_proxy_manager import NgrokProxyManager
+from asrclient.utils.list_active_thread import print_active_threads
 from asrclient.utils.resolve_url import resolve_base_url
 from asrclient.utils.parseBoolArg import parse_bool_arg
 from asrclient.server.server import Server
 
 from asrclient.transcriber.transcrber import Transcriber
-
+import atexit
 
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 setup_logger(LOGGER_NAME, LOG_FILE)
+
+
+def goodbye():
+    print("Program ended")
+
+
+atexit.register(goodbye)
 
 
 def start_cui(
@@ -183,6 +191,7 @@ def start_cui(
         # signal.signal(signal.SIGINT, original_handler)
 
     signal.signal(signal.SIGINT, original_handler)
+    # print_active_threads("----")
 
 
 def main():

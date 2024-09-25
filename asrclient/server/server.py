@@ -87,14 +87,30 @@ class Server:
         self.loop = asyncio.new_event_loop()
         asyncio.set_event_loop(self.loop)
 
-        self.loop.run_until_complete(self.server.serve())
+        try:
+
+            self.loop.run_until_complete(self.server.serve())
+        except Exception as e:
+            logging.getLogger(LOGGER_NAME).error(f"VCServer stopped.{e}")
+            print(f"VCServer stopped.{e}")
+        except asyncio.CancelledError as err:
+            logging.getLogger(LOGGER_NAME).error(f"VCServer stopped.{err}")
+            print(f"VCServer stopped.{err}")
 
     def stop(self):
+        pending = [t for t in asyncio.all_tasks(self.loop) if not t.done()]
+        if pending:
+            print(f"There are {len(pending)} pending tasks")
+            for task in pending:
+                task.cancel()
+
         self.server.should_exit = True
         time.sleep(1)
         # self.server.force_exit = True # これがあると終了処理がなされない可能性がある。あと、run_foreverではなく、.run_until_completeのほうがいいかも。
 
         logging.getLogger(LOGGER_NAME).info("wait vccserver to stop...")
+        print("wait vccserver to stop...")
         self.loop.stop()
         self.server_thread.join()
         logging.getLogger(LOGGER_NAME).info("wait vccserver to stop...done")
+        print("wait vccserver to stop...done")
