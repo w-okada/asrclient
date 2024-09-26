@@ -51,7 +51,7 @@
     "@vanilla-extract/css": "^1.15.5",
     "@vanilla-extract/dynamic": "^2.1.2",
     "@vanilla-extract/recipes": "^0.5.5",
-    "asr-client-typescript-client-lib": "^1.0.37",
+    "asr-client-typescript-client-lib": "^1.0.38",
     "highlight.js": "^11.10.0",
     "i18next": "^23.15.1",
     "i18next-browser-languagedetector": "^8.0.0",
