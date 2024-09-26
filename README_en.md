@@ -72,6 +72,10 @@ Please execute the following command:
 poetry run main cui
 ```
 
+Please access the URL in the image below.
+![image](https://github.com/user-attachments/assets/c700c75e-28b9-4779-a659-2df6eada32aa)
+
+
 If you encounter an error like `fatal error: Python.h: No such file or directory`, please install the Python source code.
 
 ```

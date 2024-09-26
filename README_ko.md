@@ -71,6 +71,12 @@ poetry install
 poetry run main cui
 ```
 
+
+아래 이미지의 URL에 접속해 주세요.
+![image](https://github.com/user-attachments/assets/c700c75e-28b9-4779-a659-2df6eada32aa)
+
+
+
 `fatal error: Python.h: 그런 파일이나 디렉터리가 없습니다`와 같은 오류가 발생하면, Python 소스 코드를 설치하십시오.
 ```
 sudo apt install python3-dev

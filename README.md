@@ -75,6 +75,11 @@ poetry install
 poetry run main cui
 ```
 
+下の画像のURLにアクセスしてください。
+![image](https://github.com/user-attachments/assets/c700c75e-28b9-4779-a659-2df6eada32aa)
+
+
+
 `fatal error: Python.h: そのようなファイルやディ レクトリはありません`のようなエラーが出る場合は、pythonのソースコードをインストールしてください。
 ```
 sudo apt install python3-dev
@@ -116,4 +121,3 @@ node .\client\webhook_server\generic_main.js
 ```
 poetry run python_socket_io http://localhost:20000
 ```
-

@@ -71,6 +71,13 @@ poetry install
 poetry run main cui
 ```
 
+请访问下方图片中的网址。
+![image](https://github.com/user-attachments/assets/c700c75e-28b9-4779-a659-2df6eada32aa)
+
+
+
+
+
 如果遇到 `fatal error: Python.h: No such file or directory` 类似的错误，请安装 Python 源代码。
 ```
 sudo apt install python3-dev
