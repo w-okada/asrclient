@@ -84,7 +84,8 @@ sudo apt-get install cmake
 
 ### NVIDIAのGPU(cuda)を使用する場合
 
-``
+```
+poetry remove onnxruntime-directml torch-directml
 poetry add torch==2.3.1 --source torch_cuda12
 poetry add onnxruntime-gpu==1.17.1 --source ort_cuda12
 ```

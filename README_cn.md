@@ -74,6 +74,19 @@ poetry run main cui
 sudo apt install python3-dev
 ```
 
+如果遇到 `No such file or directory: 'cmake'` 类似的错误，请安装 cmake:
+```
+sudo apt-get install cmake
+```
+
+### 如果使用 NVIDIA GPU (CUDA)
+
+```
+poetry remove onnxruntime-directml torch-directml
+poetry add torch==2.3.1 --source torch_cuda12
+poetry add onnxruntime-gpu==1.17.1 --source ort_cuda12
+```
+
 ### Webhook客户端样例
 
 #### Python

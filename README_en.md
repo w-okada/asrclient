@@ -74,6 +74,19 @@ If you encounter an error like `fatal error: Python.h: No such file or directory
 sudo apt install python3-dev
 ```
 
+If you encounter an error like `No such file or directory: 'cmake'`, install cmake with:
+```
+sudo apt-get install cmake
+```
+
+### If using NVIDIA GPU (CUDA)
+
+```
+poetry remove onnxruntime-directml torch-directml
+poetry add torch==2.3.1 --source torch_cuda12
+poetry add onnxruntime-gpu==1.17.1 --source ort_cuda12
+```
+
 ### Webhook Client Sample
 
 #### Python
