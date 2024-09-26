@@ -39,6 +39,18 @@ types-requests = "^2.32.0.20240914"
 pip-licenses = "^5.0.0"
 toml = "^0.10.2"
 
+
+[[tool.poetry.source]]
+name = "torch_cuda12"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
+
+
+[[tool.poetry.source]]
+name = "ort_cuda12"
+url = "https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-12/pypi/simple/"
+priority = "explicit"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
