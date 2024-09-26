@@ -77,6 +77,10 @@ poetry run main cui
 sudo apt install python3-dev
 ```
 
+`No such file or directory: 'cmake'`のようなエラーが出る場合は、cmakeをインストールしてください。
+```
+sudo apt-get install cmake
+```
 
 ### webhook client sample
 
