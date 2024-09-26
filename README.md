@@ -17,6 +17,9 @@ ASRClient
   - [kotoba-whisper-v2.0](https://huggingface.co/kotoba-tech/kotoba-whisper-v2.0)
   - [kotoba-whisper-v2.0-faster](https://huggingface.co/kotoba-tech/kotoba-whisper-v2.0-faster)
 
+## What's New
+- v.1.0.4 released
+  - source code is opened.
 
 
 ## 関連ソフトウェア

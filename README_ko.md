@@ -17,6 +17,10 @@ TTSClient
   - [kotoba-whisper-v2.0](https://huggingface.co/kotoba-tech/kotoba-whisper-v2.0)
   - [kotoba-whisper-v2.0-faster](https://huggingface.co/kotoba-tech/kotoba-whisper-v2.0-faster)
 
+## What's New
+- v.1.0.4 released
+  - source code is opened.
+
 
 ## 관련 소프트웨어
 - [실시간 음성 변조기 VCClient](https://github.com/w-okada/voice-changer)
