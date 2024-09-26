@@ -1,11 +1,11 @@
 import { openDB } from "idb";
 
-const DB_NAME = "vcclient";
+const DB_NAME = "asrclient";
 const DB_VERSION = 1;
 const STORE_NAME = "client-setting-store";
 
 export const initDB = async () => {
-    openDB(DB_NAME, DB_VERSION, {
+    await openDB(DB_NAME, DB_VERSION, {
         upgrade(db) {
             db.createObjectStore(STORE_NAME);
         },

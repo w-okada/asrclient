@@ -12,7 +12,6 @@ import {
     Protocol,
     ConvertResultResponse,
 } from "asr-client-typescript-client-lib";
-
 export type ASRClientState = {
     voiceChangerClientInitialized: boolean;
     isClientSettingLoaded: boolean;
@@ -184,10 +183,18 @@ export const useASRClient = (props: useASRClientProps): ASRClientStateAndMethod 
     }, [clientSetting]);
 
     useEffect(() => {
+        if (!clientSetting) return;
+        if (!clientSetting.voiceChangerClientSetting) return;
+        if (!clientSetting.workletSetting) return;
+
         if (!audioOutput) return;
         setItem("audioOutput", audioOutput);
     }, [audioOutput]);
     useEffect(() => {
+        if (!clientSetting) return;
+        if (!clientSetting.voiceChangerClientSetting) return;
+        if (!clientSetting.workletSetting) return;
+
         if (!audioMonitor) return;
         setItem("audioMonitor", audioMonitor);
     }, [audioMonitor]);
