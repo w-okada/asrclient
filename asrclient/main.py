@@ -9,7 +9,7 @@ from asrclient.logger import setup_logger
 from asrclient.app_status import AppStatus
 from asrclient.const import LOG_FILE, LOGGER_NAME, VERSION
 from asrclient.proxy.ngrok_proxy_manager import NgrokProxyManager
-from asrclient.utils.list_active_thread import print_active_threads
+# from asrclient.utils.list_active_thread import print_active_threads
 from asrclient.utils.resolve_url import resolve_base_url
 from asrclient.utils.parseBoolArg import parse_bool_arg
 from asrclient.server.server import Server
