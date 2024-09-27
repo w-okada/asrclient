@@ -1,7 +1,7 @@
 {
   "name": "asr-client-typescript-client-lib",
   "type": "module",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "description": "",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -27,7 +27,7 @@
     "eslint": "^9.11.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.36.1",
+    "eslint-plugin-react": "^7.37.0",
     "eslint-webpack-plugin": "^4.2.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.3.3",

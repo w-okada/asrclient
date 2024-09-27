@@ -2208,7 +2208,7 @@
       "licenseURL": ""
     },
     {
-      "name": "eslint-plugin-react@7.36.1",
+      "name": "eslint-plugin-react@7.37.0",
       "repository": "https://github.com/jsx-eslint/eslint-plugin-react",
       "licenseURL": ""
     },
@@ -4100,7 +4100,7 @@
       "licenseURL": ""
     },
     {
-      "name": "asr-client-typescript-client-lib@1.0.38",
+      "name": "asr-client-typescript-client-lib@1.0.39",
       "repository": "",
       "licenseURL": ""
     },
